@@ -13,9 +13,9 @@
     let n = parseInt(prompt('Do dai cua mang: '));
     let Array = [n];
 
-    alert("Vui long nhap so ");
+
     for (i = 0 ; i < n ; i++){
-        Array[i] = parseInt(prompt("Gia tri cua phan tu thu" + (i+1) + ":"))
+        Array[i] = Math.floor(Math.random() * 101);
     }
     document.write("Phan tu trong mang :");
 
