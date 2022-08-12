@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    let string1 = [50];
+    let string2 = [50];
+
+  string1[50] = prompt('Vui long nhap chuoi 1: ');
+  string2[50] = prompt('Vui long nhap chuoi 2: ');
+
+  let sameArray = JSON.stringify(string1) === JSON.stringify(string2);
+   if(sameArray === true){
+       document.write("Hai chuoi giong nhau");
+   }else {
+       document.write("hai chuoi khac nhau")
+   }
+
+</script>
+</html>

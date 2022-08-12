@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  let i;
+  let n = parseInt(prompt('Do dai cua mang: '));
+  let Array = [n];
+
+  alert("Vui long nhap so ")
+  for (i = 0 ; i < n ; i++){
+    Array[i] = parseInt(prompt("Gia tri cua phan tu thu" + (i+1) + ":"))
+  }
+  for (i=0;i<n;i++){
+    for (let j=0;j<n;j++){
+      if(Array[j] < Array[i]){
+        let max ;
+        max = Array[j];
+        Array[j] = Array[i];
+        Array[i] = max;
+
+      }
+    }
+  }
+  document.write("Sap xep tu lon den be : ");
+  for (i = 0 ; i < n ; i++){
+    document.write(Array[i] + ";");
+  }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let max=0;
+    let i;
+    let n = parseInt(prompt('Do dai cua mang: '));
+    let Array = [n];
+
+    alert("Vui long nhap so ");
+    for (i = 0 ; i < n ; i++){
+        Array[i] = parseInt(prompt("Gia tri cua phan tu thu" + (i+1) + ":"))
+    }
+    document.write("Phan tu trong mang :");
+
+    for(i=0 ; i < n ; i++) {
+        document.write(Array[i] + ",");
+    }
+    document.write("<br/>")
+
+    for(i=0;i<n;i++){
+       if (Array[i] > max){
+           max = Array[i];
+       }
+    }
+    let min= Array[0];
+    for(i=0;i<n;i++){
+       if (Array[i] < min) {
+           min = Array[i];
+       }
+    }
+    document.write("Max la:" + max);
+    document.write("<br/>")
+    document.write("Min la:" + min);
+</script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    let n = parseInt(prompt("vui long nhap do dai mang:"));
+    let Array = [n];
+
+    for(let i = 0; i < n ; i++){
+        Array[i] = parseInt(prompt("Phan tu thu " + (i+1) + "la :"));
+    }
+
+    document.write("Phan tu trong mang la")
+    for(let i = 0; i < n ; i++){
+        document.write( " " + Array[i] + ";");
+    }
+
+    let number;
+    for( let i = 0; i < n; i++){
+        for(let j = 2; j < n ; j++ ){
+
+            number = Array[i];
+            Array[i] = Array[j];
+            Array[j] = number;
+        }
+
+    }
+
+     document.write("Phan tu trong mang sau sap xep :")
+    for(let i = 0; i < n ; i++){
+        document.write( " " + Array[i] + ";");
+    }
+
+</script>
+</html>
